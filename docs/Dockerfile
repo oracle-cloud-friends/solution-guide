@@ -17,7 +17,7 @@ RUN apk --update add --virtual build_deps \
   && rm -rf /usr/lib/ruby/gems/*/cache/*.gem
 
 WORKDIR /usr/src/app
-COPY Gemfile* /usr/src/app
+COPY Gemfile* /usr/src/app/
 RUN bundle install \
   && rm -rf /usr/lib/ruby/gems/*/cache/*.gem
 
