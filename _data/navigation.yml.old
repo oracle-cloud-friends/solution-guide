@@ -1,0 +1,20 @@
+sidemenu:
+  - title: トップ
+    url: "/top1"
+    children:
+      - title: title1
+        url: "/top1/title1"
+      - title: title2
+        url: "/top1/title2"
+  - title: トップ2
+    url: "/top2"
+  - title: トップ3
+    url: "/top3"
+    children:
+      - title: title1
+        url: "/top3/title1"
+      - title: title2
+        url: "/top3/title2"
+        children:
+          - title: mago
+            url: "/top3/title2/mago"

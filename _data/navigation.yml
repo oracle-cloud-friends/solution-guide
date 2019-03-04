@@ -1,0 +1,17 @@
+docs:
+  - title: トップ
+    url: "/"
+  - title: アーキテクチャ
+    children:
+      - title: 三層構成
+        url: "/architectures/3-tier"
+  - title: デザインパターン
+    children:
+      - title: ボリュームの複製
+        url: "/patterns/clone-volume"
+      - title: FaultDomain分散
+        url: "/patterns/multi-fault-domains"
+  - title: その他
+    children:
+      - title: コンポーネントについて
+        url: "/components"

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/jekyll-test/architectures/3-tier</loc>
+<lastmod>2019-03-04T05:21:42+00:00</lastmod>
+</url>
+<url>
+<loc>/jekyll-test/patterns/clone-volume</loc>
+<lastmod>2019-03-04T05:21:42+00:00</lastmod>
+</url>
+<url>
+<loc>/jekyll-test/patterns/multi-fault-domains</loc>
+<lastmod>2019-03-04T05:21:42+00:00</lastmod>
+</url>
+<url>
+<loc>/jekyll-test/jekyll/update/2019/02/22/welcome-to-jekyll.html</loc>
+<lastmod>2019-02-22T05:13:10+00:00</lastmod>
+</url>
+<url>
+<loc>/jekyll-test/components.html</loc>
+</url>
+<url>
+<loc>/jekyll-test/debug.html</loc>
+</url>
+<url>
+<loc>/jekyll-test/</loc>
+</url>
+</urlset>
