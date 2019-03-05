@@ -13,9 +13,4 @@ var store = [{
         "excerpt":"パターン   ※LoadBalancerやVirtualMachineは配置例   説明  同じデータセンター上の別物理マシン上のコンポーネントを利用する   用途  可用性を向上させる。 同一データセンター内の配置になるため複数のAvailabilityDomain(AD)よりも対象外性は落ちるが、サブネット・ルートテーブルなどはAD間で共有できないため、定義を使いまわしできるなどの利点もある。   実装  コンポーネント作成時、適切なFaultDomainを選択し、分散させる   ","categories": [],
         "tags": [],
         "url": "/solution-guide/patterns/multi-fault-domains",
-        "teaser":null},{
-        "title": "Welcome to Jekyll!",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["jekyll","update"],
-        "tags": [],
-        "url": "/solution-guide/jekyll/update/2019/02/22/welcome-to-jekyll.html",
-        "teaser":null}]
+        "teaser":null},]
