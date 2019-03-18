@@ -22,3 +22,6 @@ IaaSである都合上、オンプレミス環境でも利用可能なものも�
 * [AWS クラウドデザインパターン](http://aws.clouddesignpattern.org/index.php/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)
 * [Azure クラウド設計パターン](https://docs.microsoft.com/ja-jp/azure/architecture/patterns/)
 
+# 参考情報
+* [Grapics for Topologies and Diagrams](https://docs.cloud.oracle.com/iaas/Content/General/Reference/graphicsfordiagrams.htm) の PowerPoint Graphics and Quick Guide
+* [Visual Paradigm Online](https://online.visual-paradigm.com/ja/features/oracle-cloud-infrastructure-diagram-software/)
