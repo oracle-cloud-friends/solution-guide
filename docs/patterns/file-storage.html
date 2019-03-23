@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>三層構成 - SolutionGuide</title>
+<!-- begin _includes/seo.html --><title>File Storage - SolutionGuide</title>
 <meta name="description" content="パターン">
 
 
@@ -17,8 +17,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="SolutionGuide">
-<meta property="og:title" content="三層構成">
-<meta property="og:url" content="/solution-guide/architectures/3-tier">
+<meta property="og:title" content="File Storage">
+<meta property="og:url" content="/solution-guide/patterns/file-storage">
 
 
   <meta property="og:description" content="パターン">
@@ -36,7 +36,7 @@
 
 
 
-<link rel="canonical" href="/solution-guide/architectures/3-tier">
+<link rel="canonical" href="/solution-guide/patterns/file-storage">
 
 
 
@@ -163,7 +163,7 @@
             
             
 
-            <li><a href="/solution-guide/architectures/3-tier" class="active">三層構成</a></li>
+            <li><a href="/solution-guide/architectures/3-tier" class="">三層構成</a></li>
           
         </ul>
         
@@ -199,7 +199,7 @@
             
             
 
-            <li><a href="/solution-guide/patterns/file-storage" class="">FileStorage</a></li>
+            <li><a href="/solution-guide/patterns/file-storage" class="active">FileStorage</a></li>
           
         </ul>
         
@@ -234,21 +234,19 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">三層構成</h1>
+      <h1 id="page-title" class="page__title">File Storage</h1>
     
     <h1 id="パターン">パターン</h1>
-<p><img src="/solution-guide/assets/architectures/3-tier.png" alt="3-tier" /></p>
+<p><img src="/solution-guide/assets/patterns/file-storage.png" alt="file-storage" /></p>
 
 <h1 id="説明">説明</h1>
-<p>多くの(主に)Webアプリケーションを乗せるインフラとして一般的な構成。
-WEBサーバーとAPサーバーを一つのサーバーにした二層構成と呼ばれる構成に比べWEB+APサーバーの負荷が分散できるというメリットがある。
-たとえば、静的なリクエストを処理をすることまでWEB+APサーバーにやらせると負荷が集中してしまうので、それはWEBサーバーにやらせるなど。</p>
+<p>OCIでは、拡張可能なストレージサービスが用意されている。BlockStorageとはことなり、インスタンス上からはNFSのように見え、操作することができる。</p>
 
 <h1 id="用途">用途</h1>
-<p>困ったらこの構成で考えて、要件を満たせないポイントがあったらカスタマイズしていく</p>
+<p>複数インスタンス・コンテナ間でのデータ共有。オンラインのまま拡張可能なストレージ。</p>
 
 <h1 id="実装">実装</h1>
-<p>(FIXME)</p>
+<p>TODO: 後でスクショを貼る</p>
 
   </div>
 </div>

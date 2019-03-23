@@ -11,6 +11,8 @@ docs:
         url: "/patterns/clone-volume"
       - title: FaultDomain分散
         url: "/patterns/multi-fault-domains"
+      - title: FileStorage
+        url: "/patterns/file-storage"
   - title: その他
     children:
       - title: コンポーネントについて

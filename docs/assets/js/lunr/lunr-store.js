@@ -9,6 +9,11 @@ var store = [{
         "tags": [],
         "url": "/solution-guide/patterns/clone-volume",
         "teaser":null},{
+        "title": "File Storage",
+        "excerpt":"パターン     説明  OCIでは、拡張可能なストレージサービスが用意されている。BlockStorageとはことなり、インスタンス上からはNFSのように見え、操作することができる。   用途  複数インスタンス・コンテナ間でのデータ共有。オンラインのまま拡張可能なストレージ。   実装  TODO: 後でスクショを貼る  ","categories": [],
+        "tags": [],
+        "url": "/solution-guide/patterns/file-storage",
+        "teaser":null},{
         "title": "FaultDomain分散",
         "excerpt":"パターン   ※LoadBalancerやVirtualMachineは配置例   説明  同じデータセンター上の別物理マシン上のコンポーネントを利用する   用途  可用性を向上させる。 同一データセンター内の配置になるため複数のAvailabilityDomain(AD)よりも対象外性は落ちるが、サブネット・ルートテーブルなどはAD間で共有できないため、定義を使いまわしできるなどの利点もある。   実装  コンポーネント作成時、適切なFaultDomainを選択し、分散させる   ","categories": [],
         "tags": [],
