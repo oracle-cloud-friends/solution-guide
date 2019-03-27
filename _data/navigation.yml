@@ -3,16 +3,20 @@ docs:
     url: "/"
   - title: アーキテクチャ
     children:
-      - title: 三層構成
+      - title: 一般的なWebサービス
         url: "/architectures/3-tier"
   - title: デザインパターン
     children:
-      - title: ボリュームの複製
+      - title: 起動ディスクの複製
         url: "/patterns/clone-volume"
-      - title: FaultDomain分散
+      - title: ラックレベルでの冗長化
         url: "/patterns/multi-fault-domains"
-      - title: FileStorage
+      - title: ファイルストレージの利用
         url: "/patterns/file-storage"
+      - title: "インターネットからの接続を受け入れる"
+        url: "/patterns/internet-gateway"
+      - title: "負荷の分散(スケールアウト)"
+        url: "/patterns/scale-out"
   - title: その他
     children:
       - title: コンポーネントについて
