@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>CloneVolume - SolutionGuide</title>
+<!-- begin _includes/seo.html --><title>InternetGateway - SolutionGuide</title>
 <meta name="description" content="パターン">
 
 
@@ -17,8 +17,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="SolutionGuide">
-<meta property="og:title" content="CloneVolume">
-<meta property="og:url" content="/solution-guide/patterns/clone-volume">
+<meta property="og:title" content="InternetGateway">
+<meta property="og:url" content="/solution-guide/patterns/internet-gateway">
 
 
   <meta property="og:description" content="パターン">
@@ -36,7 +36,7 @@
 
 
 
-<link rel="canonical" href="/solution-guide/patterns/clone-volume">
+<link rel="canonical" href="/solution-guide/patterns/internet-gateway">
 
 
 
@@ -183,7 +183,7 @@
             
             
 
-            <li><a href="/solution-guide/patterns/clone-volume" class="active">起動ディスクの複製</a></li>
+            <li><a href="/solution-guide/patterns/clone-volume" class="">起動ディスクの複製</a></li>
           
             
             
@@ -207,7 +207,7 @@
             
             
 
-            <li><a href="/solution-guide/patterns/internet-gateway" class="">インターネットからの接続を受け入れる</a></li>
+            <li><a href="/solution-guide/patterns/internet-gateway" class="active">インターネットからの接続を受け入れる</a></li>
           
             
             
@@ -250,29 +250,29 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">CloneVolume</h1>
+      <h1 id="page-title" class="page__title">InternetGateway</h1>
     
     <h1 id="パターン">パターン</h1>
-<p><img src="/solution-guide/assets/patterns/clone-volume.png" alt="clone-volume" /></p>
+<p><img src="/solution-guide/assets/patterns/internet-gateway.png" alt="internet-gateway" /></p>
 
 <h1 id="説明">説明</h1>
-<p>OCIでは、インスタンスのBootVolumeに指定されているBlockStorageをCloneし、新規インスタンス作成時に複製したVolumeを選択することにより、インスタンスの複製を可能とする。</p>
+<p>OCIでは、不要なインスタンスのweb公開を避けるため、標準状態ではインスタンスが外からのアクセスを受け付けない状態となっている。インターネットからの接続を受け付けるためには、インスタンスに紐付いたVirtualCloudNetwork(VCN)にInternetGatewayを作成する。</p>
 
 <h1 id="用途">用途</h1>
-<p>アプリケーションのビルド等、時間のかかる作業を複数インスタンスでやりたい場合など、一つのインスタンスで実施し、作業済みのものを展開できる。</p>
+<p>(LoadBalancerを用いない)Webサーバーなど、外部から直接アクセスを受け取ることができる。</p>
 
 <h1 id="実装">実装</h1>
 <p>TODO: 後でスクショを貼る</p>
 
 <ol>
-  <li>Compute &gt; BootVolumesの画面から、該当インスタンスのBootVolumeを見つけ、CloneVolumeを選択
+  <li>インターネットからの接続を受け付けたいVCNのDetail画面からInternetGatewayの画面を開く。</li>
+  <li>Create Internet Gatewayボタンをクリックし、InternetGatewayを作成する
     <ul>
-      <li>インスタンスの停止やデタッチは不要で、起動中インスタンスにアタッチされたVolumeを複製可能</li>
+      <li>(複数あっても意味がないので)一つのVCNには一つのInternetGatewayしか作成できない</li>
     </ul>
   </li>
-  <li>CloneしたVolumeがBootVolumesの画面でAVAILABLE表示になるまで待つ</li>
-  <li>インスタンス新規作成時、OSなどイメージを選択するところで、複製したVolumeを選択</li>
 </ol>
+
 
   </div>
 </div>

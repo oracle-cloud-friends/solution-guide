@@ -1,5 +1,5 @@
 ---
-title: 三層構成
+title: 一般的なWebサービス
 ---
 # パターン
 ![3-tier]({{site.baseurl}}/assets/architectures/3-tier.png)

@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>CloneVolume - SolutionGuide</title>
+<!-- begin _includes/seo.html --><title>ScaleOut - SolutionGuide</title>
 <meta name="description" content="パターン">
 
 
@@ -17,8 +17,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="SolutionGuide">
-<meta property="og:title" content="CloneVolume">
-<meta property="og:url" content="/solution-guide/patterns/clone-volume">
+<meta property="og:title" content="ScaleOut">
+<meta property="og:url" content="/solution-guide/patterns/scale-out">
 
 
   <meta property="og:description" content="パターン">
@@ -36,7 +36,7 @@
 
 
 
-<link rel="canonical" href="/solution-guide/patterns/clone-volume">
+<link rel="canonical" href="/solution-guide/patterns/scale-out">
 
 
 
@@ -183,7 +183,7 @@
             
             
 
-            <li><a href="/solution-guide/patterns/clone-volume" class="active">起動ディスクの複製</a></li>
+            <li><a href="/solution-guide/patterns/clone-volume" class="">起動ディスクの複製</a></li>
           
             
             
@@ -215,7 +215,7 @@
             
             
 
-            <li><a href="/solution-guide/patterns/scale-out" class="">負荷の分散(スケールアウト)</a></li>
+            <li><a href="/solution-guide/patterns/scale-out" class="active">負荷の分散(スケールアウト)</a></li>
           
         </ul>
         
@@ -250,29 +250,29 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">CloneVolume</h1>
+      <h1 id="page-title" class="page__title">ScaleOut</h1>
     
     <h1 id="パターン">パターン</h1>
-<p><img src="/solution-guide/assets/patterns/clone-volume.png" alt="clone-volume" /></p>
+<p><img src="/solution-guide/assets/patterns/scale-out.png" alt="scale-out" /></p>
 
 <h1 id="説明">説明</h1>
-<p>OCIでは、インスタンスのBootVolumeに指定されているBlockStorageをCloneし、新規インスタンス作成時に複製したVolumeを選択することにより、インスタンスの複製を可能とする。</p>
+<p>一つのインスタンスのみを利用している場合、負荷に応じて処理リソースを増減させることは難しい。そのような場合は、LoadBalancerに振分をまかせLoadBalancer配下のインスタンスを増減させることにより、負荷に応じた処理リソースの増減を実現する。</p>
 
 <h1 id="用途">用途</h1>
-<p>アプリケーションのビルド等、時間のかかる作業を複数インスタンスでやりたい場合など、一つのインスタンスで実施し、作業済みのものを展開できる。</p>
+<p>なんらかの理由で処理負荷が一定ではないサービスを運用をしているときに、サーバー費用を抑え、費用的に効率の良い運用ができるようにする</p>
 
 <h1 id="実装">実装</h1>
 <p>TODO: 後でスクショを貼る</p>
 
 <ol>
-  <li>Compute &gt; BootVolumesの画面から、該当インスタンスのBootVolumeを見つけ、CloneVolumeを選択
+  <li>Networking &gt; LoadBalancerの画面でCreate Load Balancerボタンを押す</li>
+  <li>必要なLoadBalancerの設定を入力し、作成する
     <ul>
-      <li>インスタンスの停止やデタッチは不要で、起動中インスタンスにアタッチされたVolumeを複製可能</li>
+      <li>ここでバックエンドとなるサーバーのIPを入力する</li>
     </ul>
   </li>
-  <li>CloneしたVolumeがBootVolumesの画面でAVAILABLE表示になるまで待つ</li>
-  <li>インスタンス新規作成時、OSなどイメージを選択するところで、複製したVolumeを選択</li>
 </ol>
+
 
   </div>
 </div>
